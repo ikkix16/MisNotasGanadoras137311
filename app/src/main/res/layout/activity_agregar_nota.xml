@@ -9,26 +9,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/primary_text"
-        android:text="NOTA"
-        android:textSize="24dp"
-        android:textAlignment="center"></TextView>
+        android:text="@string/appnombre"
+        android:textSize="24sp"
+        android:textAlignment="center">
+        
+    </TextView>
 
     <EditText
         android:id="@+id/et_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/primary_text"
-        android:hint="Título"></EditText>
+        android:hint="@string/titulo"
+        android:inputType="text"
+        android:importantForAutofill="no">
+
+    </EditText>
 
     <EditText
         android:id="@+id/et_contenido"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Escribir nota"
+        android:layout_height="0dp"
+        android:hint="@string/nota"
         android:textColor="@color/secondary_text"
         android:inputType="textMultiLine"
         android:layout_weight="1"
-        android:gravity="top"></EditText>
+        android:gravity="top"
+        android:importantForAutofill="no">
+
+    </EditText>
 
     <Button
         android:id="@+id/btn_guardar"
@@ -36,6 +45,8 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         android:textColor="@color/primary_text"
-        android:text="Guardar"></Button>
+        android:text="@string/guardar">
+
+    </Button>
 
 </LinearLayout>

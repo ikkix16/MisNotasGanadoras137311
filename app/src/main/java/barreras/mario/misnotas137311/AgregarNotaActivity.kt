@@ -1,5 +1,6 @@
 package barreras.mario.misnotas137311
 
+import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.os.Environment
@@ -10,8 +11,9 @@ import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_agregar_nota.*
 import java.io.File
 import java.io.FileOutputStream
-import java.util.jar.Manifest
 
+
+@SuppressLint("Registered")
 class AgregarNotaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
